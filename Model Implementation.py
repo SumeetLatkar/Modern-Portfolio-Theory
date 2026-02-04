@@ -110,7 +110,7 @@ def show_mean_variance(returns, weights):
 
 def show_portfolios(returns, volatilities):
     plt.figure(figsize=(10,6))
-    plt.scatter( volatilities, returns, c = returns - risk_free_rate / volatilities, marker = 'o', alpha = 0.4)
+    plt.scatter( volatilities, returns, c = returns / volatilities, marker = 'o', alpha = 0.4)
     plt.grid(True)
     plt.xlabel('Expected Volatility')
     plt.ylabel('Expected Returns')
@@ -187,6 +187,7 @@ if __name__ == '__main__':
     optimum = optimize_portfolio(pweights, log_daily_returns)
     print_optimal_portfolio(optimum, log_daily_returns)
     show_optimal_portfolios(optimum, log_daily_returns, means, risks)
+
 
 
 
