@@ -10,58 +10,58 @@ annual_trading_days = 252
 Num_Portfolio = 10000
 # stocks we are going to handle
 
-#stocks = ['AAPL', 'WMT','TSLA', 'GE', 'AMZN', 'DB']
+stocks = ['AAPL', 'WMT','TSLA', 'GE', 'AMZN', 'DB']
 
-stocks = [
-    'RELIANCE.NS',
-    'TCS.NS',
-    'HDFCBANK.NS',
-    'ICICIBANK.NS',
-    'INFY.NS',
-    'HINDUNILVR.NS',
-    'ITC.NS',
-    'LT.NS',
-    'SBIN.NS',
-    'BHARTIARTL.NS',
-    'KOTAKBANK.NS',
-    'AXISBANK.NS',
-    'BAJFINANCE.NS',
-    'BAJAJFINSV.NS',
-    'ASIANPAINT.NS',
-    'MARUTI.NS',
-    'SUNPHARMA.NS',
-    'TITAN.NS',
-    'ULTRACEMCO.NS',
-    'NTPC.NS',
-    'POWERGRID.NS',
-    'ONGC.NS',
-    'M&M.NS',
-    'WIPRO.NS',
-    'HCLTECH.NS',
-    'JSWSTEEL.NS',
-    'TATASTEEL.NS',
-    'COALINDIA.NS',
-    'DIVISLAB.NS',
-    'ADANIENT.NS',
-    'ADANIPORTS.NS',
-    'DRREDDY.NS',
-    'EICHERMOT.NS',
-    'HEROMOTOCO.NS',
-    'BPCL.NS',
-    'CIPLA.NS',
-    'GRASIM.NS',
-    'INDUSINDBK.NS',
-    'BRITANNIA.NS',
-    'HDFCLIFE.NS',
-    'SBILIFE.NS',
-    'APOLLOHOSP.NS',
-    'UPL.NS',
-    'TECHM.NS',
-    'TATACONSUM.NS',
-    'BAJAJ-AUTO.NS',
-    'SHREECEM.NS',
-    'NESTLEIND.NS'
-]
+# stocks = [
+#     'RELIANCE.NS',
+#     'TCS.NS',
+#     'HDFCBANK.NS',
+#     'ICICIBANK.NS',
+#     'INFY.NS',
+#     'HINDUNILVR.NS',
+#     'ITC.NS',
+#     'LT.NS',
+#     'SBIN.NS',
+#     'BHARTIARTL.NS',
+#     'KOTAKBANK.NS',
+#     'AXISBANK.NS',
+#     'BAJFINANCE.NS',
+#     'BAJAJFINSV.NS',
+#     'ASIANPAINT.NS',
+#     'MARUTI.NS',
+#     'SUNPHARMA.NS',
+#     'TITAN.NS',
+#     'ULTRACEMCO.NS',
+#     'NTPC.NS',
+#     'POWERGRID.NS',
+#     'ONGC.NS',
+#     'M&M.NS',
+#     'WIPRO.NS',
+#     'HCLTECH.NS',
+#     'JSWSTEEL.NS',
+#     'TATASTEEL.NS',
+#     'COALINDIA.NS',
+#     'DIVISLAB.NS',
+#     'ADANIENT.NS',
+#     'ADANIPORTS.NS',
+#     'DRREDDY.NS',
+#     'EICHERMOT.NS',
+#     'HEROMOTOCO.NS',
+#     'BPCL.NS',
+#     'CIPLA.NS',
+#     'GRASIM.NS',
+#     'INDUSINDBK.NS',
+#     'BRITANNIA.NS',
+#     'HDFCLIFE.NS',
+#     'SBILIFE.NS',
+#     'APOLLOHOSP.NS',
+#     'UPL.NS',
+#     'TECHM.NS',
+#     'TATACONSUM.NS',
+#     'BAJAJ-AUTO.NS',
+#     'SHREECEM.NS',
+#     'NESTLEIND.NS'
+# ]
 
 #handle historical data - define start and end dates
 
@@ -187,5 +187,6 @@ if __name__ == '__main__':
     optimum = optimize_portfolio(pweights, log_daily_returns)
     print_optimal_portfolio(optimum, log_daily_returns)
     show_optimal_portfolios(optimum, log_daily_returns, means, risks)
+
 
 
